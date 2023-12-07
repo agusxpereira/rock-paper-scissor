@@ -14,7 +14,7 @@ Nuestro jugador va a jugar contra la computadora.
 const option = ['paper', 'rock', 'scissors'];
 
 function getComputerChoice(){
-    let choice = Math.floor((Math.random() * 3) + 1); 
+    let choice = Math.floor((Math.random() * option.length) + 1); 
     return option[choice - 1];
 }
 
@@ -27,18 +27,20 @@ function playRound(playerSelection, computerSelection){
     Scissor beats paper 
     paper beats rock 
     */
+    let player = playerSelection.toLowerCase();
+
     let winner = ""; 
-    if(playerSelection == option[0]){
+    if(player == option[0]){
         winner = (computerSelection == option[0]) ?   "Tie!" : 
                     (computerSelection == option[1]) ? "Player" : 
                         computerSelection == option[2] ? "Computer" : "";
     }
-    else if(playerSelection == option[1]){
+    else if(player == option[1]){
         winner = (computerSelection == option[1]) ?  "Tie!" : 
                     (computerSelection == option[2]) ? "Player" : 
                         computerSelection == option[0] ? "Computer" : "";
     }
-    else if(playerSelection == option[2]){ 
+    else if(player == option[2]){ 
         winner = (computerSelection == option[2]) ?  "Tie!" : 
                     (computerSelection == option[0]) ? "Player" : 
                         computerSelection == option[1] ? "Computer" : "";
