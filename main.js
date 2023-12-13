@@ -1,16 +1,3 @@
-/*
-*Por el momento, sólo va a poder jugarse por la consola del navegador, 
-más adelante lo revisitamos. 
-
-Ejercicios antes de empezar: tres maneras de incluir javascript en una página. 
-
-Nuestro jugador va a jugar contra la computadora. 
-
-
-*/
-
-//console.log('Hola, desde el script!');
-
 const option = ['paper', 'rock', 'scissors'];
 
 function getComputerChoice(){
@@ -72,19 +59,3 @@ function game(number, playerSelection){
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* console.log(`Resultado random * 3 = ${resultRandom}`);
-console.log(`Resultado random * 3 + 1 = ${resultRandom + 1}`);
-console.log(getComputerChoice()); */

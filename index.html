@@ -4,13 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rock, paper or scissors</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Piedra, papel o tijeras!</h1>
+    </header>
 
-    <script>
-        console.log('Hola, desde el html!');
-    </script>
+    <div class="container">
+        <main>
+            <div class="display-game">
+                
+            </div>
+            <div class="buttons">
+                <button id="rock" class="play-ui"><img src="images/rock.png" alt=""></button>
+                <button id="paper" class="play-ui"><img src="images/paper.png" alt=""></button>
+                <button id="scissors" class="play-ui"><img src="images/scissors.png" alt=""></button>
+
+                <select name="best-of" id="best-of">
+                    <option value="3">best of 3</option>
+                    <option value="5"> best of 5</option>
+                    <option value="7"> best of 7</option>
+                </select>
+
+            </div>
+        </main>
+        <aside>
+            <div class="score"></div>
+        </aside>
+
+    </div>
+
     <script src="main.js"></script>
 </body>
 </html>
