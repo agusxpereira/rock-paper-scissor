@@ -1,18 +1,51 @@
+*{
+    /*Reset's every elements apperance*/
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    border-spacing: 0;
+    color: #26589F;
+    font-family: 'PT Sans Narrow',sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.42rem;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0;   
+}
+
 header{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 70px;
+    /*28036a
+     26589F
+    */
+    border-bottom:1px solid #26589F ;
+    background-color: #28036a;
+    color: white;
 }
+h1{
+    margin-top: 10px;
+    color: whitesmoke;
+    font-size: 200%;
+}
+
 .container{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
 }
-
-main > button {
-    background: none;
-  border: 0;
-  color: inherit;
+.flex-row-centered{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
 }
 button > img {
     max-height: 50px;
@@ -27,9 +60,10 @@ main{
     align-items: center;
 }
 .display-game{
-    border: 1px solid blue;
+    
     min-height: 300px;
     min-width: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,12 +83,12 @@ main{
     margin: 10px;
 } 
 .player > .selections{
-    display: flex;
-    flex-direction: row;
+   
     min-width: 100%;
+    max-width: 100%;
     background-color: blanchedalmond;
     min-height: 50%;
-    flex-wrap: nowrap;
+    
 }
 
 
@@ -65,6 +99,32 @@ main{
 }
 
 aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     min-width: 30%;
-    border: 1px solid black;
+    
+} 
+aside > p {
+    margin-top: 150px;
+    margin: 20px;
+}
+
+.display-game > .buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 
+.buttons > .group-play-ui{
+    
+    min-width: 100%;
+    gap: 15px;
+
+}
+.buttons > .group-game-ui{ 
+   
+    min-width: 100%;
+    
 }

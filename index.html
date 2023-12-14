@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>Piedra, papel o tijeras!</h1>
+        <h1>Rock, paper, scissors!</h1>
     </header>
 
     <div class="container">
@@ -16,23 +16,27 @@
             <div class="display-game">
                 <div class="player pc">
                     <p>PC:</p>
-                    <div class="selections" id="selections-pc"></div>
+                    <div class="selections flex-row-centered" id="selections-pc"></div>
                 </div>
                 <div class="player">
-                    <p>you:</p>
-                    <div class="selections" id="selections-player"></div>
+                    <p>You:</p>
+                    <div class="selections flex-row-centered" id="selections-player"></div>
                 </div>
             </div>
             <div class="buttons">
-                <button id="rock" class="play-ui"><img src="images/rock.png" alt="" value="rock"></button>
-                <button id="paper" class="play-ui"><img src="images/paper.png" alt="" value="paper"></button>
-                <button id="scissors" class="play-ui"><img src="images/scissor.png" alt="" value="scissors"></button>
-
-                <select name="best-of" id="best-of">
-                    <option value="3">best of 3</option>
-                    <option value="5"> best of 5</option>
-                    <option value="7"> best of 7</option>
-                </select>
+                <div class="group-play-ui flex-row-centered">
+                    <button id="rock" class="play-ui"><img src="images/rock.png" alt="" value="rock"></button>
+                    <button id="paper" class="play-ui"><img src="images/paper.png" alt="" value="paper"></button>
+                    <button id="scissor" class="play-ui"><img src="images/scissor.png" alt="" value="scissors"></button>
+                </div>
+                <div class="group-game-ui flex-row-centered">
+                    <select name="best-of" id="best-of">
+                        <option value="3">best of 3</option>
+                        <option value="5"> best of 5</option>
+                        <option value="7"> best of 7</option> 
+                    </select>
+                    <button id="reset">reset</button>
+                </div>
 
             </div>
         </main>
